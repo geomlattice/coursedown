@@ -1,5 +1,3 @@
-# Coursedown Table of Contents
-
 # Immunology
 
 ## Lecture Notes
