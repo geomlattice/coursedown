@@ -30,7 +30,7 @@ Neutrophil: myeloid cells that are some of the most immediate immune effectors. 
 
 In the FACS experiment below, you can presume that each plot represents a subset of the cells to the right of it, as indicated by either the pink “gate” or the arrow (with the CD45/CD11b plot following the SSC-A/live-dead plot)
 
-![FACS Plot](../../original_files/immuno/pset1_fig1.png)
+![FACS Plot](../../originalfiles/immuno/pset1_fig1.png)
 
 Forward scatter (FSC) is used as a proxy for cell size. Side scatter (SSC) measures overall cellular granularity. These are typically the first analyses done to identify the broad classes of cells you are studying. 
 
