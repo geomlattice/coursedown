@@ -63,7 +63,7 @@ You want to study conventional dendritic cells and how both subsets conduct anti
 
 In Experiment 1 you assess DC from wildtype mice, while in experiments 2 and 3 you use mice deficient in antigen presentation. Unfortunately, the labels of the knockout mouse strains were also gone (you learn to use ethanol-proof markers from now on!).
 
-[Knock Outs](../../originalfiles/immuno/Practice_Exam_2023_fig1.png)
+![Knock Outs](../../originalfiles/immuno/Practice_Exam_2023_fig1.png)
 
 1. From the data shown in Experiment 1 please deduce what conditions 1 (shown as -1) and 2 (shown as -2) are. Remember you used a viral infection and a cell line expressing OVA. Please justify your answer in 1 sentence.  
 
