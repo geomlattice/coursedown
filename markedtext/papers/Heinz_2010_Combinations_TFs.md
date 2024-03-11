@@ -1,0 +1,40 @@
+# Simple Combinations of Lineage-Determining Transcription Factors Prime cis-Regulatory Elements Required for Macrophage and B Cell Identities
+
+Sven Heinz,1,7 Christopher Benner,1,7 Nathanael Spann,1,7 Eric Bertolino,4 Yin C. Lin,3 Peter Laslo,6 Jason X. Cheng,4
+Cornelis Murre,3 Harinder Singh,4,5 and Christopher K. Glass1,2,
+1. Department of Cellular and Molecular Medicine
+2. Department of Medicine
+3. Section of Molecular Biology University of California, San Diego, 9500 Gilman Drive, La Jolla, CA 92093, USA
+4. Molecular Genetics and Cell Biology, The University of Chicago, 929 East 57th Street GCIS W522, Chicago, IL 60637, USA
+5. Department of Discovery Immunology, Genentech, San Francisco, CA 94080, USA
+6. Section of Experimental Hematology, University of Leeds, Leeds LS9 7TF, UK
+7. These authors contributed equally to this work
+
+## Correspondence: ckg@ucsd.edu
+## DOI 10.1016/j.molcel.2010.05.004
+
+[Molecular Cell Article Volume 38, Issue 4, p576-589, May 28, 2010](https://doi.org/10.1016/j.molcel.2010.05.004)
+
+## Summary
+
+Genome-scale studies have revealed extensive, cell type-specific colocalization of transcription factors, but the mechanisms underlying this phenomenon remain poorly understood. Here, we demonstrate in macrophages and B cells that collaborative interactions of the common factor PU.1 with small sets of macrophage- or B cell lineage-determining transcription factors establish cell-specific binding sites that are associated with the majority of promoter-distal H3K4me1-marked genomic regions. PU.1 binding initiates nucleosome remodeling, followed by H3K4 monomethylation at large numbers of genomic regions associated with both broadly and specifically expressed genes. These locations serve as beacons for additional factors, exemplified by liver X receptors, which drive both cell-specific gene expression and signal-dependent responses. Together with analyses of transcription factor binding and H3K4me1 patterns in other cell types, these studies suggest that simple combinations of lineage-determining transcription factors can specify the genomic sites ultimately responsible for both cell identity and cell type-specific responses to diverse signaling inputs.
+
+## Highlights
+
+* Lineage-determining transcription factors collaboratively define their cistromes
+
+* PU.1 binding causes nucleosome repositioning and subsequent H3K4 monomethylation 
+
+* H3K4me1+ regions are enriched for motifs for lineage-determining factors
+
+* Second-tier transcription factors bind to regions opened by these master regulators
+
+## Introduction 
+
+The development of complex multicellular organisms involves hierarchically organized progenitor cells that ultimately give rise to terminally differentiated cell types with specialized functions. Cell fates are specified by lineage-determining transcription factors whose expression is often not limited to a single cell type (Tronche and Yaniv, 1992)[https://doi.org/10.1002/bies.950140902]. Comparisons of the genome-wide binding patterns of different transcription factors in a variety of species and cell types have generated two major insights regarding transcription factor binding patterns: (1) different factors in the same cell type tend to colocalize on a genome-wide scale ((Chen et al., 2008)[https://www.cell.com/cell/fulltext/S0092-8674(08)00617-X], (MacArthur et al., 2009)[https://genomebiology.biomedcentral.com/articles/10.1186/gb-2009-10-7-r80], and (2) the same factor in different cell types or at different stages of development exhibits different genome-wide binding patterns ((Lupien et al., 2008)[https://www.cell.com/cell/fulltext/S0092-8674(08)00118-9], (Odom et al., 2004)[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3012624/], (Sandmann et al., 2006)[https://www.cell.com/developmental-cell/fulltext/S1534-5807(06)00170-5]).
+
+Several mechanisms have been proposed to explain this phenomenon, including protein-protein interactions that enable ternary complex formation with DNA (Verger and Duterque-Coquillaud, 2002)[https://onlinelibrary.wiley.com/doi/10.1002/bies.10068], pioneering factors that disrupt the closed nucleosome conformation and enable other factors to bind (Cirillo et al., 2002)[https://www.cell.com/servlet/linkout?suffix=e_1_5_1_2_7_2&dbid=4&doi=10.1016/j.molcel.2010.05.004&key=10.1016%2FS1097-2765%2802%2900459-8&cf=fulltext&site=cell-site], cooperative binding of one or more factors to clustered sites that facilitates nucleosome displacement and stable binding of the factors involved ((Boyes and Felsenfeld, 1996)[https://www.embopress.org/doi/abs/10.1002/j.1460-2075.1996.tb00607.x?sid=nlm%3Apubmed], (Miller and Widom, 2003)[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC151720/]), and binding to chromatin marked in a cell type-specific manner by lysine 4-methylated histone H3 (H3K4me1/2) (Lupien et al., 2008)[https://www.cell.com/servlet/linkout?suffix=e_1_5_1_2_23_2&dbid=4&doi=10.1016/j.molcel.2010.05.004&key=10.1016%2Fj.cell.2008.01.018&cf=fulltext&site=cell-site], a sign of open chromatin that is correlated with activity of nearby genes (Heintzman et al., 2009)[]. However, how transcription factors gain access to their eventual binding sites and the hierarchy of events that generate their cell type-specific binding and the associated epigenetic modification patterns have not previously been elucidated on a genome-wide scale.
+
+The mammalian hematopoietic system represents a well-characterized model for the analysis of the combinatorial sets of transcription factors that orchestrate the development of distinct cell types from hematopoietic stem cells. Within the hematopoietic system, macrophages and B cells play essential and complementary roles in the innate and adaptive arms of the immune system. Recent studies suggest a model in which these cell types are derived from a lymphoid-primed multipotential progenitor (LMPP) that subsequently gives rise to common lymphoid progenitor (CLP) and granulocyte-macrophage progenitor (GMP) cells (Adolfsson et al., 2005) (Figure 1A ). The Ets factor PU.1 is required for the generation of both GMP and CLP, and the later stages of macrophage and B cell development are additionally dependent on a number of cell type-restricted factors. Of these, AP-1 and C/EBP family factors are required for macrophage development and function (Friedman, 2007), whereas E2A, EBF1, Pax5, and Oct-2 play important roles in the development and function of B cells (Medina and Singh, 2005). In addition to their roles in hematopoietic development, recent evidence suggests that PU.1-bound sites in macrophages play a role in shaping the transcriptional response to inflammatory stimuli such as lipopolysaccharide (LPS), likely by generating cell type-specific regions of open chromatin that serve as beacons for the recruitment of transcriptional coactivators in response to stimuli (Ghisletti et al., 2010). 
+
+To address the question of how lineage-determining transcription factors bind to genomic regions in a cell-specific manner, we investigated the genome-wide locations of PU.1 and the effects of loss or gain of other transcription factors on the PU.1 binding pattern in macrophages, B cells, and different B cell progenitors. In addition, we assessed the impact of loss and gain of PU.1 on the cistrome of the myeloid-restricted transcription factor, C/EBPβ. Our results suggest that cell type-specific cistromes arise from collaborative interactions between small sets of lineage-determining factors that result in enhanced DNA binding, nucleosome remodeling, and subsequent deposition of the epigenetic enhancer mark H3K4me1. The association of PU.1 and its collaborating factors at these genomic locations provides access points for the binding of additional transcription factors, which themselves do not appear to significantly contribute to shaping the overall master regulator genomic distribution or the overall H3K4me1 pattern but act to confer transcriptional functions to these distal sites.
