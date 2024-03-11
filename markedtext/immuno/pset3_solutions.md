@@ -115,14 +115,14 @@ You discover that a subset of the Heffalumps demonstrate defective TCR signaling
 
 Please order the following 6 statements about antigen presentation in order they occur and fill in the blanks. Please be aware one statement is not part of the molecular process and should be labeled with an X, but the blanks should still be filled in
 
-5. Cell Surface MHCI () complexes stimulate () T cells in the lymph node; Peptide, CD8
+5. Cell Surface MHCI (Peptide) complexes stimulate (CD8) T cells in the lymph node; Peptide, CD8
 
-1. A mutation in the coding sequence of a protein results in misfolding which results in () and degradation by the (); ubiquitination, proeasome
+1. A mutation in the coding sequence of a protein results in misfolding which results in (ubiquitination) and degradation by the (proteasome); ubiquitination, proteasome
 
-2. Small () long peptide sequences from the cytoplasm are being imported to the () by Tap1/2 (); 8-15aa, ER, complexes
+2. Small (8-15aa) long peptide sequences from the cytoplasm are being imported to the (ER) by Tap1/2 (complexes); 8-15aa, ER, complexes
 
 X. Following MHCII formation the () stabilizes the molecules and gets cleaved into () by cathespin S; invariant chain, LIP10 Li and CLIP
 
-3. MHCI alpha proteins fold in the endoplasmic reticulum in the presence of () while () associated with the complex at a later stage; calnectin, B2M
+3. MHCI alpha proteins fold in the endoplasmic reticulum in the presence of (calnectin) while (B2M) associated with the complex at a later stage; calnectin, B2M
 
-4. () ensures proper loading of MHCI molecules; ERp57 and or tapasin
+4. (ERp57 and or tapasin) ensures proper loading of MHCI molecules; ERp57 and or tapasin
