@@ -20,7 +20,9 @@
 # Evolutionary Biology
 
 Tasks
-Tensions for 03/11/24
+Tensions inscribed as of 03/11/24
 - [x] Find Textbook; Status: Purchased $16, shipping Mar 13; This Weds
 - [ ] Do Problem Set 2; Status: Late
+- [ ] Review Lecture Material for Problem Set 2
+- [ ] Review Lecture Material for Problem Set 3
 - [ ] Do Problem Set 3; Status: Due Mar 14; This Thur
