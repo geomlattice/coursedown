@@ -20,7 +20,7 @@
 # Evolutionary Biology
 
 Tasks
-
-- [ ] Find Textbook
-- [ ] Do Problem Set 2
-- [ ] Do Problem Set 3
+Tensions for 03/11/24
+- [x] Find Textbook; Status: Purchased $16, shipping Mar 13; This Weds
+- [ ] Do Problem Set 2; Status: Late
+- [ ] Do Problem Set 3; Status: Due Mar 14; This Thur
