@@ -21,7 +21,9 @@
 
 Tasks
 Tensions inscribed as of 03/11/24
-- [x] Find Textbook; Status: Purchased $16, shipping Mar 13; This Weds
+- [x] Find Textbook; Status: Purchased $16, shipped
+- [x] Markdown Problem Set 3 Pt 1
+- [ ] Markdown Problem Set 3 Pt 2
 - [ ] Do Problem Set 2; Status: Late
 - [ ] Review Lecture Material for Problem Set 2
 - [ ] Review Lecture Material for Problem Set 3
