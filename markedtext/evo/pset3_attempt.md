@@ -118,5 +118,93 @@ During cell division, microtubules of the spindle apparatus attach to chromosome
 
 > . . . 
 
+# Programming Exercises
 
+## Problem 6
 
+1. Write a computer program for the Wright-Fisher model of drift, assuming a haploid, asexually reproducing population with two selectively neutral alleles, A and a, at one locus. Your simulator should have at least two input parameters: (1) N, for population size; and (2) i0, for the initial number of A alleles in the population (or p0 for the initial allele frequency of A, as long as you convert p0*N to an integer number of initial alleles). It might be helpful to have a third parameter, n gen, for the number of generations to simulate. Alternatively, you could have your simulator terminate once the allele either fixes or is lost. Plot a few example runs to check that your program runs correctly. Your “solution” to this part of the problem is to include your program code in an attachment to your problem set submission so that it can be checked.
+
+> . . .
+
+2. Plot a few runs of your simulator with generations on the x-axis and p on the y-axis (make sure your axes are labeled!) for three values of N : N = 10, N = 100, and N = 1000. If possible, plot all runs from one value of N together on one plot. Describe qualitatively the effects of drift as the population size N increases from, say, 10 to 100 to 1000. Submit your plots in support of your explanation.
+
+> . . .
+
+3. Using your program, estimate the probability that an allele having frequency i/N will be fixed in the population. Explain how you arrived at this estimate
+
+> . . .
+
+4. Using your program, estimate the average time (in number of generations) needed for a newly arisen (X0 = 1), neutral allele to go to fixation as a function of N . Explain how you arrived at this estimate.
+
+> . . .
+
+## Problem 7
+
+300 million years ago in the common ancestor of therian mammals, today’s X and Y chro- mosomes were an ordinary pair of autosomes. After the proto-Y acquired a sex-determining mutation, it ceased to undergo normal recombination with the proto-X along most of its length (Fig. 1). In effect, this cessation of recombination made the Y subject to asexual haploid evolution, and the results were distastrous. Millions of years of degenerative evolution ensued—inactivating mutations were acquired and fixed, genes were lost—leaving today’s Y with only 3% of the genes it once shared with the X. Muller’s ratchet has been proposed as a key mechanism underlying the mammalian Y’s degeneration. In this problem, you will use simulations of Muller’s ratchet to gain insight into the Y’s history and future
+
+![Chromosomes](../../originalfiles/evo/pset3_fig2.png)
+
+Figure 2: A simplified depiction of the evolution and degeneration of the mammalian Y chromosome from its once identical partner, the X. Only 3% of the genes present on the ancestral autosomes remain within the Y’s “male-specific” region (purple), which does not normally undergo recombination with the X.
+
+1. Briefly explain how the absence of recombination (leading to the operation of Muller’s ratchet) could drive gene loss on the Y chromosome.
+
+> . . .
+
+2. If Muller’s ratchet is responsible for the Y’s degeneration, we would like to know how quickly it operates. At any given time, the chromosomes in a population carry different numbers of mutations. When the chromosome with the fewest mutations is lost from a population due to the sampling effect of drift, the minimum number of mutations that any chromosome carries increases. This is referred to as one “turn” of the ratchet. Write a program to simulate this process. Your program should take take four parameters: N, the number of Y chromosomes in the population; u, the per-chromosome mutation rate per generation; s, the average selection coefficient for new mutations; and n turns, the number of “turns” of the ratchet to observe before ending the simulation. An example plot showing the results of one simulation can be found on the next page (Fig. 2). A recommended procedure for implementing the simulator is as follows:
+> . . .
+
+![Mutations and Generations](../../originalfiles/evo/pset3_fig3.png)
+
+Figure 3: An example run of a Muller’s rachet simulation. Each point represents one turn of the ratchet, showing both the mutational burden of the fittest chromosome at the time of turn as well as the number of generations elapsed (since the start of the simulation). As time goes on, the miminimum number of mutations that any chromosome carries increases.
+
+1. Initialize a length-(n turns+1) array, gens, for storing the generations on which you observe turns of the ratchet. Set gens[0] to 0. For example, if the first turn of the ratchet occurred after 100 generations and the second turn happened 50 generations later, you would set gens[1]=100 and gens[2]=150
+
+> . . .
+
+2. Initialize a length-(n turns+1) array, minmuts, for storing the minimum number of mutations car- ried by any chromosome. minmuts[t] will hold the minimum number of mutations carried by any chromosome after t turns of the ratchet.
+
+> . . .
+
+3. Initialize a length-N array, pop, for representing your population. pop[i] will contain the number of mutations present on the i-th chromosome in the current generation. Rather than starting with zero mutations on all chromosomes, fill your first generation according to the expectations of mutation- drift balance. To do this, draw N random numbers from a Poisson distribution with mean u/s. (Hint: use numpy.random.poisson or scipy.stats.poisson.rvs in Python or poissrnd in MATLAB.) Set minmuts[0] to the minimum number of mutations carried by any chromosome in this initial generation.
+
+> . . .
+
+4. From this initial generation of fathers’ Y chromosomes, create a a new generation of their sons’ Y chromosomes as follows
+
+* Choose a random chromosome from the population (i.e., a father’s Y) for replication
+
+* Subject the replicated chromosome (i.e., the son’s Y) to possible mutation. Draw a random number from a Poisson distribution with mean u (not u/s), representing the number of new mutations acquired by the son’s chromosome. Add this number of new mutations to the number its father possessed. (Note: the number of mutations that the father’s chromosome possesses should not change.) 5 
+
+* Determine whether this son’s chromosome survives to the next generation by overcoming selec- tion. Draw a uniform random number between 0 and 1. (Hint: random.random in Python or rand in MATLAB.) If this number is less than (1 − s)k, where k is the number of mutations on the chromosome, add this chromosome to your new generation
+
+* Continue randomly replicating, mutating, and subjecting chromosomes to selection until you have successfully filled the next generation with N new chromosomes
+
+> . . .
+
+5. Find the minimum number of mutations that any chromosome carries. If this number is higher than the previous minimum, the ratchet has just completed one turn. Record this generation in gens and the minimum number of mutations present in minmuts.
+
+> . . .
+
+6. Repeat this process until the ratchet has turned n turns=20 times
+
+> . . .
+
+7. Plot the results of your simulation with generations on the x-axis and the minimum numbers of mutations in those generations on the y-axis. See the lecture slides for an example. A scatter plot would work well for this (scatter in Python’s pylab/matplotlib.pyplot or in MATLAB) 
+
+> . . .
+
+Submit your code as your solution to this part of the problem. You should still try to answer the questions below even if you are unable to produce fully functional code
+
+3. Run and plot a few simulations using different values of N (e.g., N=100, N=1000) using u=0.1 and s=0.01. (We justify the use of u=0.1 by assuming that the per-site mutation rate on the Y, which is slightly higher than on autosomes, is 10−7 and that there are approximately 106 functionally important sites.) How does the size of the population affect the rate at which the fittest chromosomes are lost from the population?
+
+4. For a fixed value of N and u=0.1 as above, run and plot a few simulations using different values of s (e.g., s=0.05, 0.01, 0.001). How does selection against new mutations affect the rate at which the fittest chromosomes are lost from the population?
+
+> . . .
+
+5. The effective population sizes of humans and other large mammals are generally considered to be in the tens of thousands. For flies, effective population size can be well into the millions. Would Muller’s ratchet be an equally plausible mechanism for Y chromosome degeneration in flies? Explain briefly.
+
+> . . .
+
+6. Things aren’t looking good for the Y chromosome. It seems as though Muller’s ratchet has it on a steady path toward oblivion. We have assumed for our simulation that the average selection coefficient for a new mutation remains constant over time. Suppose that as the result of Muller’s ratchet genes on the Y with the least important functions are slowly whittled away leaving an increasingly small set of genes with, on average, increasingly more important functions. (Indeed, we think this is what has happened.) In this scenario, we might expect the average selection coefficient for new mutations to increase over time. What effect would this have on the rate of Muller’s ratchet and the degeneration of the Y chromosome? Do you think the Y will ultimately go extinct?
+
+> . . .
