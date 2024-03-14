@@ -28,12 +28,12 @@ Tensions inscribed as of 03/11/24
 - [x] Markdown Problem Set 3 Pt 2
 - [ ] Do Problem Set 2; Status: Late
 - [ ] Review Lecture Material for Problem Set 2
-- [ ] Review Lecture Material for Problem Set 3
+- [x] Review Lecture Material for Problem Set 3
 - [ ] Do Problem Set 3; Status: Due Mar 14; This Thur
 
 Textbook Reading
 - [x] Ch 8
-- [ ] Ch 9
+- [x] Ch 9
 - [ ] Ch 10-11
 - [ ] Ch 12
 - [ ] Ch 3
